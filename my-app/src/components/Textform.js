@@ -19,6 +19,13 @@ export default function Textform(props) {
   };
 
 
+  const Copy = () => {
+    var text = document.getElementById("myBox");
+    text.select();
+    navigator.clipboard.writeText(text.value);
+  };
+
+
   const handleSpeak = () => {
     let msg = new SpeechSynthesisUtterance();
     msg.text = text;
@@ -29,6 +36,8 @@ export default function Textform(props) {
     console.log("On Change");
     setText(event.target.value);
   };
+
+
   const [text, setText] = useState("Enter Text Here");
   return (
     <>
@@ -62,6 +71,9 @@ export default function Textform(props) {
         {/* <button type="submit" onClick={speak} className="btn btn-warning mx-2 my-2">Speak</button> */}
 
         <button className="btn mx-2" style={{ backgroundColor: '#98DED9', color: 'white' }} onClick={handleSpeak} >speak</button>
+
+        <button className="btn mx-2" style={{ backgroundColor: '#CDC1FF', color: 'black' }} onClick={Copy}  >Copy</button>
+
 
 
 

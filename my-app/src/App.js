@@ -7,7 +7,7 @@ import Textform from "./components/Textform";
 function App() {
   return (
     <>
-      <Navbar title="TexUtils" aboutText="About Text" />
+      <Navbar title="TextFlex" aboutText="About Text" />
       <div className="container" mb-3>
         <Textform heading="Enter Your Text To Analyze" />
         <About/>
