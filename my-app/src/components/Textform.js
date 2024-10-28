@@ -32,10 +32,15 @@ export default function Textform(props) {
     window.speechSynthesis.speak(msg);
   };
 
+  const handleExtraSpaces = () => {
+    let newText = text.split(/[ ]+/);
+    setText(newText.join(" "))
+  };
+
   const handleOnChange = (event) => {
     console.log("On Change");
     setText(event.target.value);
-  };
+  }
 
 
   const [text, setText] = useState("Enter Text Here");
@@ -73,6 +78,8 @@ export default function Textform(props) {
         <button className="btn mx-2" style={{ backgroundColor: '#98DED9', color: 'white' }} onClick={handleSpeak} >speak</button>
 
         <button className="btn mx-2" style={{ backgroundColor: '#CDC1FF', color: 'black' }} onClick={Copy}  >Copy</button>
+
+        <button className="btn mx-1" style={{ backgroundColor: '#BFECFF', color: 'black' }} onClick={handleExtraSpaces}>Remove extra spaces</button>
 
 
 
