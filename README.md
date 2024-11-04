@@ -37,7 +37,8 @@ TextFlex
 - **Clear Text**: Deletes all text from the input box.
 - **Text Preview**: Shows a live preview of the entered text.
 
-## Usage
+## Usage![Screenshot (37)](https://github.com/user-attachments/assets/da818cbf-1bf4-415b-8707-8d089b52c8a2)
+
 
 - Enter text in the input box.
 - Use the available buttons to perform actions on the text:
