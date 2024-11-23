@@ -28,21 +28,7 @@
 - React: For building the user interface.
 - JavaScript: For functionality.
 - CSS: For styling.
-## Future Improvements
-- More text analyzing functionality can be added
 
-- **Text Preview**: Shows a live preview of the entered text.
 
-## Usage
-
-- Enter text in the input box.
-- Use the available buttons to perform actions on the text:
-  - Convert case, count words and characters, calculate reading time, read aloud, remove spaces, copy, and clear.
-- View real-time text analysis and preview.
-
-## Technologies Used
-- React: For building the user interface.
-- JavaScript: For functionality.
-- CSS: For styling.
 ## Future Improvements
 - More text analyzing functionality can be added
